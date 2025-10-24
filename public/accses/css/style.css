@@ -1,0 +1,40 @@
+body {
+  background-color: #f8fafc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+/* Hero Section */
+.hero {
+  background-image: url('../img/school-bg.jpg'); /* kamu bisa ganti dengan gambarmu */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* overlay gelap agar teks terlihat jelas */
+}
+
+.hero > div {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
